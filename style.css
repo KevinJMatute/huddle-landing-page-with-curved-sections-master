@@ -1,0 +1,164 @@
+:root {
+  --clr-primary-pink: hsl(322, 100%, 66%);
+  --clr-primary-light-pink: hsl(321, 100%, 78%);
+  --clr-primary-red: hsl(0, 100%, 63%);
+
+  --clr-neutral-800: hsl(192, 100%, 9%);
+  --clr-neutral-100: hsl(207, 100%, 98%);
+
+  --ff-accent: "Poppins", sans-serif;
+  --ff-base: "Open Sans", sans-serif;
+
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+/*     general styles*/
+body {
+  font-family: var(--ff-base);
+  font-weight: 400;
+  margin: 0 2rem;
+}
+header {
+  text-align: center;
+}
+button {
+  border-radius: 2em;
+}
+/******* margin **********/
+
+h1,
+.header__description,
+.get-started,
+.header__pre,
+.header__numbers,
+.header__value {
+  margin-top: 4rem;
+}
+/*    nav          */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.7em 0em;
+}
+.nav__company-logo {
+  width: 35%;
+}
+.nav__button {
+  padding: 0em 1.3em;
+  color: var(--clr-primary-pink);
+  border: 1px solid var(--clr-primary-pink);
+  background-color: transparent;
+  font-family: var(--ff-base);
+  cursor: pointer;
+}
+/*        Header */
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+.header__description {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+}
+.get-started {
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-pink);
+  border: 1px solid var(--clr-primary-light-pink);
+  box-shadow: 0px 2px 8px rgba(48, 48, 48, 0.411);
+}
+.header__pre {
+  margin-top: 5rem;
+}
+.header__value{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.header__numbers {
+  
+  font-size: 3.6rem;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-bold);
+}
+.description{
+  display: block;
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+  color: rgb(170, 169, 169);
+}
