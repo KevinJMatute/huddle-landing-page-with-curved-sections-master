@@ -276,4 +276,7 @@ footer {
   .main__inverse {
     flex-direction: row-reverse;
   }
+  footer {
+    flex-direction: row;
+  }
 }
