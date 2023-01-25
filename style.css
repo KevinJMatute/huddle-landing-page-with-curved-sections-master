@@ -88,7 +88,6 @@ body {
   font-family: var(--ff-base);
   font-weight: 400;
   text-align: center;
-  
 }
 
 button {
@@ -97,7 +96,8 @@ button {
 
 /******* margin **********/
 
-h1,h2,
+h1,
+h2,
 .header__description,
 .get-started,
 .header__pre,
@@ -162,15 +162,31 @@ h1 {
   color: rgb(170, 169, 169);
 }
 
-/*          main */
-
+/***************         main ******************/
+h2 {
+  font-family: var(--ff-accent);
+}
 .main__img {
   padding: 5em 3em 0em;
 }
 
-.main__grow-together, .main__users {
+.main__grow-together,
+.main__users {
   background-color: var(--clr-neutral-100);
 }
 .main__description {
-  padding: 0 2rem 2rem;
+  padding: 1rem 2rem 3rem;
+}
+.main__question {
+  font-family: var(--ff-accent);
+  font-size: 1.5rem;
+}
+.get-started--botom {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+}
+/****************** FOOTER *****************/
+footer {
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-100);
 }
