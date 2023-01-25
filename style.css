@@ -248,18 +248,32 @@ footer {
 /************** DEsktop media*********/
 @media (min-width: 37em) {
   .header__pre {
-    padding-inline:  10%;
+    padding-inline: 10%;
   }
- .header__value{
-  display: flex;
-  flex-direction: row;
- justify-content: center;
- margin-bottom: 5rem;
- }
- .main__grow-together, .main__flowing, .main__users {
- display: grid;
- grid-template-columns: 1fr 1fr;
- align-items: center;
- padding: 0 5% 5em;
- }
+  .header__value {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .header__numbers {
+    font-size: 4.7rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  .main__img {
+    width: 50vw;
+  }
+  .main__grow-together,
+  .main__flowing,
+  .main__users {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5% 5em;
+  }
+  .main__inverse {
+    flex-direction: row-reverse;
+  }
 }
