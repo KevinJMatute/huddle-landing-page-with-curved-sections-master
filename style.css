@@ -178,6 +178,7 @@ h2 {
   padding: 1rem 2rem 3rem;
 }
 .main__question {
+  margin-top: 4em;
   font-family: var(--ff-accent);
   font-size: 1.5rem;
 }
@@ -189,14 +190,15 @@ h2 {
 footer {
   display: flex;
   flex-direction: column-reverse;
+  gap: 5rem;
   padding: 2em 2em;
+  text-align: start;
   background-color: var(--clr-neutral-800);
   color: var(--clr-neutral-100);
 }
-.newsletter {
-  text-align: start;
-}
-.newsletter__description {
+
+.newsletter__description,
+.contact__description {
   margin-top: 1em;
   font-size: 0.9rem;
 }
@@ -209,7 +211,7 @@ footer {
 }
 .newsletter__button {
   display: block;
-  padding: .41em 1.8em;
+  padding: 0.41em 1.8em;
   margin-top: 1rem;
   margin-left: auto;
   border-radius: 0.25rem;
@@ -218,5 +220,26 @@ footer {
   color: var(--clr-neutral-100);
   background-color: var(--clr-primary-pink);
   border: none;
-
+}
+.contact__logo {
+  width: 11.5em;
+}
+.contact__phone,
+.contact__mail {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  margin-top: 2.5em;
+  font-size: 0.8rem;
+}
+.contact__mail {
+  margin-top: 1em;
+}
+.social{
+  display: flex;
+  gap: 1em;
+  margin-top: 2.5em;
+}
+.social i{
+transform: scale(1.5);
 }
