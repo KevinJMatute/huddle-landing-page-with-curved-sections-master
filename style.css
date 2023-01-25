@@ -279,4 +279,11 @@ footer {
   footer {
     flex-direction: row;
   }
+  form{
+    display: flex;
+    gap: 1.5em;
+  }
+  .newsletter__button{
+    margin-top: 2em;
+  }
 }
